@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1 class="title">Feliz Aniversário</h1>
+            <p class="subtitle">Hoje é um dia para celebrar — e para pensar com carinho sobre quem você tem sido.</p>
+
+            <div class="actions">
+                <button id="reflectBtn" class="btn">Refletir</button>
+                        <button id="themeBtn" class="btn ghost">Modo noturno</button>
+                        <button id="playMusic" class="btn ghost" aria-pressed="false">Tocar música</button>
+                        <button id="toggleBalloons" class="btn ghost" aria-pressed="true">Bexigas</button>
+            </div>
+
+                    <div id="reflection" class="reflection" aria-hidden="true">
+                        <div id="typed" class="typed" role="status" aria-live="polite"></div>
+                        <div class="reflection-controls">
+                            <button id="closeRef" class="btn small">Fechar</button>
+                        </div>
+                    </div>
+
+            <footer class="foot">Toque em "Refletir" para ver uma mensagem introspectiva — pressione Esc para fechar.</footer>
+        </section>
+    </main>
+
+            <!-- container para balões animados -->
+            <div id="balloonContainer" aria-hidden="true" class="balloon-container"></div>
+
+            <!-- áudio de música -->
+            <audio id="audioMusic" style="display: none;">
+                <source src="musica/Lugar Ao Sol(MP3_320K).mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+
+            <script src="index.js" defer></script>
+</body>
+</html>
